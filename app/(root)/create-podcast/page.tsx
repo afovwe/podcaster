@@ -82,7 +82,7 @@ const CreatePodcast = () => {
                 <FormItem className=" flex flex-col gap-2.5">
                   <FormLabel className="text-16 font-bold text-white-1">Podcast Title</FormLabel>
                   <FormControl>
-                    <Input className="input-class focus-visible:ring-orange-1" placeholder="Podcaster" {...field} />
+                    <Input className="input-class focus-visible:ring-offset-orange-1" placeholder="Podcaster" {...field} />
                   </FormControl>
                  
                   <FormMessage className="text-white-1" />
@@ -95,7 +95,7 @@ const CreatePodcast = () => {
               </Label>
               <Select onValueChange={(value) => 
                 setVoiceType(value)}>
-                <SelectTrigger className={cn('text-16 w-full border-none bg-black-1 text-gray-1')}>
+                <SelectTrigger className={cn('text-16 w-full border-none bg-black-1 text-gray-1 focus:ring-offset-orange-1')}>
                   <SelectValue placeholder="Theme" />
                 </SelectTrigger>
                 <SelectContent className="text-16 border-none bg-black-1 font-bold text-white-1 focus:right-1">
@@ -122,7 +122,7 @@ const CreatePodcast = () => {
                 <FormItem className=" flex flex-col gap-2.5">
                   <FormLabel className="text-16 font-bold text-white-1">Description</FormLabel>
                   <FormControl>
-                    <Textarea className="input-class focus-visible:ring-orange-1" placeholder="Write a shot podcast description" {...field} />
+                    <Textarea className="input-class focus-visible:ring-offset-orange-1" placeholder="Write a shot podcast description" {...field} />
                   </FormControl>
                  
                   <FormMessage className="text-white-1" />
